@@ -1,4 +1,33 @@
-# Getting Started with Create React App
+styled-components is the modern way to write CSS with React.
+
+**Why do we need styled-components?**
+
+- regular CSS isn't a great pattern.
+- CSS styles are not closely tied to React components. They become hard to reference.
+- React's way of inlining CSS with JS objects requires us to rename CSS properties, for example "margin-left" becomes "marginLeft", which isn't ideal either.
+
+In styled components we write CSS within JS inside a *template literal*, for example:
+
+```javascript
+const Button = styled.a`
+	display: inline-block;
+	border-radius: 3px;
+	padding: 0.5rem, 0;
+	...
+`
+```
+
+- Generates unique class names behind the scenes
+- Tied to that React component only — not hidden away in a giant CSS file.
+- Dynamic made simple
+
+**see [./src/components/foo](./src/components/foo) for a quick demo.**
+
+ `yarn add styled-components` to add styled-component to your React project.
+
+**React + CSS: What are styled-components?:** https://www.youtube.com/watch?v=nA7ofx-dNW0
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
